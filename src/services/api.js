@@ -7,15 +7,15 @@
 */
 
 
-import axios from 'axios';
+import { create } from 'apisauce'
 
-const api = axios.create({
+const api = create({
     baseURL: 'http://10.0.2.2:3333/',
 })
 
-/* api.addRequestTransform(response => {
+api.addRequestTransform(response => {
     if(!response.ok) throw response;
-}) */
+})
 
 
 export default api; 

@@ -10,6 +10,4 @@ const Routes = createStackNavigator({
   Main,
 });
 
-
-
 export default Routes;

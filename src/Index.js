@@ -1,4 +1,4 @@
-/* import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Button,} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -35,6 +35,7 @@ export default function App() {
     <View style={styles.container}>
       {!!this.state.errorMessage && <text>{this.state.errorMessage}</text>}
       <Button onPress = {this.signIn} title = "Entrar" />
+      <text>'Hello' </text>
     </View>
   );
 }
@@ -47,13 +48,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
- */
-
-
-import React from 'react';
-
-import Routes from './routes';
-
-const App = () => <Routes />;
-
-export default App;
